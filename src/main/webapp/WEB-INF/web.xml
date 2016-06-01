@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+
+	<servlet>
+		<servlet-name>WxServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.WxServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TokenServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.TokenServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CallbackipServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.CallbackipServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CreateMenuServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.CreateMenuServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetMaterialcountServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.GetMaterialcountServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadMediaServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.UploadMediaServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadMaterialServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.UploadMaterialServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadNewsImgServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.UploadNewsImgServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadMaterialNewsServlet</servlet-name>
+		<servlet-class>web.Servlet.wx.UploadMaterialNewsServlet</servlet-class>
+	</servlet>
+	
+	
+
+	<servlet-mapping>
+		<servlet-name>WxServlet</servlet-name>
+		<url-pattern>/wx</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TokenServlet</servlet-name>
+		<url-pattern>/token</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CallbackipServlet</servlet-name>
+		<url-pattern>/getcallbackip</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreateMenuServlet</servlet-name>
+		<url-pattern>/createMenu</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetMaterialcountServlet</servlet-name>
+		<url-pattern>/getMaterialcount</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadMediaServlet</servlet-name>
+		<url-pattern>/uploadMedia</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadMaterialServlet</servlet-name>
+		<url-pattern>/uploadMaterial</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadNewsImgServlet</servlet-name>
+		<url-pattern>/uploadNewsImg</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadMaterialNewsServlet</servlet-name>
+		<url-pattern>/uploadMaterialNews</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
